@@ -60,6 +60,8 @@ constexpr ComparisonType ReverseComparisonType(ComparisonType comparison) noexce
             return ComparisonType::GREATER_THAN;
         case ComparisonType::LESS_THAN_OR_EQUAL:
             return ComparisonType::GREATER_THAN_OR_EQUAL;
+        default:
+            break;
     }
     return comparison;
 };
